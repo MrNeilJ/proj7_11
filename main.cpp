@@ -14,4 +14,24 @@ public:
     {
         length = len;
     }
+
+    void setWidth(double wid)
+    {
+        width = wid;
+    }
+
+    double getLength()
+    {
+        return length;
+    }
+
+    double get Width()
+    {
+        return width;
+    }
+
+    double calArea()
+    {
+        return length * width;
+    }
 };
