@@ -35,3 +35,27 @@ public:
         return length * width;
     }
 };
+
+class Carpet
+{
+private:
+    double pricePerSqYd;
+    Rectangle size;             // size is an instance of
+                                // the Rectangle class
+public:
+    void setPricePerYd(double)
+    {
+        pricePerSqYd = p;
+    }
+
+    void setDimensions(double len, double wid)
+    {
+        size.setLength(len/3);  // convert feet to yards
+        size.setWidth(wid/3);
+    }
+
+    double getTotalPrice()
+    {
+        return(size.calArea() * pricePerSqYd);
+    }
+};
