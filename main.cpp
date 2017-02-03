@@ -25,7 +25,7 @@ public:
         return length;
     }
 
-    double get Width()
+    double getWidth()
     {
         return width;
     }
@@ -43,7 +43,7 @@ private:
     Rectangle size;             // size is an instance of
                                 // the Rectangle class
 public:
-    void setPricePerYd(double)
+    void setPricePerYd(double p)
     {
         pricePerSqYd = p;
     }
@@ -78,7 +78,7 @@ int main()
     purchase.setDimensions(length, width);
     purchase.setPricePerYd(pricePerYd);
 
-    cout << "\nThe total price of my new " << length << " x" << width
+    cout << "\nThe total price of my new " << length << " x " << width
          << " carpet is $" << purchase.getTotalPrice() << endl;
 
     return 0;
