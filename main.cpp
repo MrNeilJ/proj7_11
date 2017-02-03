@@ -59,3 +59,27 @@ public:
         return(size.calArea() * pricePerSqYd);
     }
 };
+
+// ********************** Client Program  **********************
+int main()
+{
+    Carpet purchase;
+    double pricePerYd;
+    double length;
+    double width;
+
+    cout << "Room length in feet: ";
+    cin >> length;
+    cout << "Room width in feet : ";
+    cin >> width;
+    cout << "Cartpet price per sq. yard: ";
+    cin >> pricePerYd;
+
+    purchase.setDimensions(length, width);
+    purchase.setPricePerYd(pricePerYd);
+
+    cout << "\nThe total price of my new " << length << " x" << width
+         << " carpet is $" << purchase.getTotalPrice() << endl;
+
+    return 0;
+}
